@@ -1,0 +1,24 @@
+{
+  "name" : "Phono",
+  "version" : "0.1.0",
+  "description" : "PhonoPhone",
+  "background_page" : "background.html",
+  "browser_action" : {
+    "default_icon" : "logo-32.png"
+  },
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js" : ["contentscript.js"],
+      "run_at" : "document_idle"
+    }
+  ],
+  "icons" : {
+    "16" : "logo-16.png",
+    "48" : "logo-48.png",
+    "128" : "logo-128.png"
+  }
+}

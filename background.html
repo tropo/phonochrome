@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (c) 2011 Chris Matthieu. All rights reserved.  Use of this
+ * source code is governed by the Apache 2 license.
+-->
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      /**
+       * Opens PhonoPhone when the browser action is clicked.
+       * Used window.open because I didn't want the tabs permission.
+       */
+      chrome.browserAction.onClicked.addListener(function() {
+        window.open('http://phonophone.heroku.com', 'telephone', 'width=350,height=400');
+      });
+    </script>
+  </body>
+</html>
