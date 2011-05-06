@@ -18,7 +18,7 @@ if (regex.test(document.body.innerText)) {
 	for (var i = 0; i < hits.length; i += 1) {
 	    // page = page.replace(hits[i], '<a href="http://phonophone.heroku.com?phone=' + trimString(hits[i]) + '">' + hits[i] + '</a>');
 	    page = page.replace(hits[i], '<a href="#" onclick="javascript:window.open(\'http://phonophone.heroku.com?phone=' + trimString(hits[i]) + '\' , \'popup_id\', \'scrollbars,resizable,width=350,height=400\')">' + hits[i] + '</a>');
-	console.log('found: ' + trimString(hits[i]))
+	// console.log('found: ' + trimString(hits[i]))
 	}
 	
 	document.write (document.doctype);
@@ -28,7 +28,7 @@ if (regex.test(document.body.innerText)) {
 
 } else {
   // No match was found.
-  console.log('no matches')
+  // console.log('no matches')
 }
 
 
