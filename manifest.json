@@ -1,6 +1,6 @@
 {
   "name" : "Phono",
-  "version" : "0.1.0",
+  "version" : "0.1.1",
   "description" : "Phono is a browser-based webphone by Voxeo. More info available at http://phono.com",
   "background_page" : "background.html",
   "browser_action" : {
