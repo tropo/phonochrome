@@ -21,8 +21,7 @@ if (regex.test(document.body.innerText)) {
 	// console.log('found: ' + trimString(hits[i]))
 	}
 	
-	document.write (document.doctype);
-	document.write (page);
+	document.write (document.doctype + page);
 	
   	chrome.extension.sendRequest({}, function(response) {});
 
