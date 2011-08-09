@@ -7,7 +7,8 @@ var page;
 var hits;
 
 // Test the text of the body element against our regular expression.
-if (regex.test(document.body.innerText)) {
+// if (regex.test(document.body.innerText)) {
+if (regex.test(document.documentElement.innerHTML)) {
   // The regular expression produced a match, so notify the background page.
 
 	// page = document.body.innerHTML;
